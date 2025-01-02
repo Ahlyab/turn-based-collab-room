@@ -30,8 +30,8 @@ export const Editor = () => {
         </div>
       </div>
       <MonacoEditor
-        // height="calc(100% - 40px)"
-        height="200px"
+        height="calc(100% - 40px)"
+        // height="200px"
         defaultLanguage="typescript"
         theme="vs-dark"
         value={room?.currentCode || '// Start coding here...'}

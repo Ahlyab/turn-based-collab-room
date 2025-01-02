@@ -45,22 +45,26 @@ export default function Room() {
 
   if (!room) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-xl">Loading room...</div>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center">
+        <div className="text-2xl text-gray-700 font-semibold animate-pulse">Loading room...</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <div className="max-w-6xl mx-auto space-y-6">
-        <div className="grid grid-cols-3 gap-6">
-          <div className="col-span-2">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-8">
+      <div className="max-w-7xl mx-auto space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
             <Editor />
           </div>
           <div className="space-y-6">
-            <RoomStatus />
-            <Timer />
+            <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+              <RoomStatus />
+            </div>
+            <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+              <Timer />
+            </div>
           </div>
         </div>
       </div>

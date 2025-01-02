@@ -30,8 +30,8 @@ A real-time collaborative code editor built with Next.js and Socket.IO that allo
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/Ahlyab/turn-based-collab-room.git
+   cd turn-based-collab-room
    ```
 
 2. **Install dependencies**
@@ -73,13 +73,7 @@ Create a `.env.local` file in the root directory:
 NEXT_PUBLIC_WEBSOCKET_URL=http://localhost:3000
 ```
 
-## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
